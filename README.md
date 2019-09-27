@@ -294,6 +294,6 @@ Individual tutorials with the instructor, addressing student's specific issues.
 [The Coding Train --- Daniel Shiffman's Youtube Videos on p5.js](https://www.youtube.com/user/shiffman/search?query=p5)  
 [p5.js port of all examples in Learning Processing](https://github.com/shiffman/LearningProcessing-p5.js)  
 [Allison Parrish's website with helpful p5.js tutorials](https://creative-coding.decontextualize.com)  
-[Examples from the book *Form+Code*](https://www.openprocessing.org/sketch/681818)  
+[Examples from the book *Form+Code*](http://formandcode.com/code-examples/)  
 [A list of creative coding resources](https://github.com/terkelg/awesome-creative-coding/)  
 [Generative Design examples](http://www.generative-gestaltung.de/2/)
