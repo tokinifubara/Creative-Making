@@ -7,9 +7,9 @@
 6. We are a diverse set of people from various cultural backgrounds. 
    We will be patient with each other.
    
-# Presentation Schedules [^1]
+# Presentation Schedules
 
-|Week #|Presenters                      |
+|Week #|Presenters [^1]                 |
 |:----:|:-------------------------------|
 |2     | Jack, Laurence, Harry, Jasmine |
 |3     | Amo, Vasi, Slim, Izzy          |
