@@ -9,16 +9,16 @@
    
 # Presentation Schedules
 
-|Week #|Presenters [^1]                 |
-|:----:|:-------------------------------|
-|2     | Jack, Laurence, Harry, Jasmine |
-|3     | Amo, Vasi, Slim, Izzy          |
-|4     | Chiara, Franscesco,Tony, Min   |
-|5     | Will, Hillary, Sade, Kai       |
-|7     | Eli, Rishi                     |
-|8     | xxxx, xxxxx                    |
+|Week #|Presenters <sup>[1](#note1)<sup>                 |
+|:----:|:------------------------------------------------|
+|2     | Jack, Laurence, Harry, Jasmine                  |
+|3     | Amo, Vasi, Slim, Izzy                           |
+|4     | Chiara, Franscesco,Tony, Min                    |
+|5     | Will, Hillary, Sade, Kai                        |
+|7     | Eli, Rishi                                      |
+|8     | xxxx, xxxxx                                     |
 
 # Slides
 [Week 1 Slides](Week1/Slides/Week1_CreateCanvas.html)
 
-[^1]: Subject to change depending on time constraints.
+<a name="note1">1</a>: Subject to change depending on time constraints.
