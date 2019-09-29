@@ -5,8 +5,8 @@
 4. We will be polite.
 5. We will not be disruptive in class. 
 6. We are a diverse set of people from various cultural backgrounds.  
+   We will be patient when we are not clearly understood.  
    We will be patient with each other.
-   We will be patient when we are not clearly understood.
    
 # Presentation Schedules
 
