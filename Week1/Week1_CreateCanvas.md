@@ -94,7 +94,7 @@ Marcel Duchamp (1935)](http://hyperallergic.com/wp-content/uploads/2016/09/ezgif
 ![**Early Computer-Generated Art**  
 *Sine Curve Man*, Charles Csuri (1967)](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2b%2F9d%2Fe2%2F2b9de286541aa8c224df6c61c0e288be.jpg&f=1&nofb=1){width="45%"}
 
-<!-- slide vertical=true data-notes="Molnar's art using these plotters illustrates Paul's (2003) statement that computational art relies on a set of rules. For Molnar, her work as an artist is to create the rules and find ways to make the computer deviate from them. This is an early example of generational art, where in computers create varying images using a set of algorithms." -->
+<!-- slide vertical=true data-notes="Molnar's art using these plotters illustrates Paul's (2003) statement that computational art relies on a set of rules. For Molnar, her work as an artist is to create the rules and find ways to make the computer deviate from them. This is an early example of generative art, where in computers create varying images using a set of algorithms." -->
 ![**Early Computer-Generated Art**   
 *A la Recherche de Paul Klee (Searching for Paul Klee) (detail).*,   
 Vera Molnar (1971) ](https://images.surfacemag.com/app/uploads/2017/11/13103930/vera-molnar-paul-klee-pen-2000x1333.jpg){width="60%"}
@@ -197,8 +197,8 @@ function draw() {
 }
 ```
 <!-- slide -->
-Make a quick sketch of yourself using basic shapes   
-and create an illustration using what we have just learned
+Make a hand-drawn self portrait using basic shapes  
+and create a p5 sketch using what we have just learned
 
 <!-- slide -->
 ## Prepare...
