@@ -4,7 +4,7 @@
 3. We will not assume knowledge. If we must use specialist words, we will explain them.
 4. We will be polite.
 5. We will not be disruptive in class. 
-6. We are a diverse set of people from various cultural backgrounds. 
+6. We are a diverse set of people from various cultural backgrounds.  
    We will be patient with each other.
    
 # Presentation Schedules
