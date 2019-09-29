@@ -6,6 +6,7 @@
 5. We will not be disruptive in class. 
 6. We are a diverse set of people from various cultural backgrounds.  
    We will be patient with each other.
+   We will be patient when we are not clearly understood.
    
 # Presentation Schedules
 
@@ -13,7 +14,7 @@
 |:----:|:------------------------------------------------|
 |2     | Jack, Laurence, Harry, Jasmine                  |
 |3     | Amo, Vasi, Slim, Izzy                           |
-|4     | Chiara, Franscesco,Tony, Min                    |
+|4     | Chiara, Franscesco, Tony, Min                   |
 |5     | Will, Hillary, Sharday, Kai                     |
 |7     | Eli, Rishi                                      |
 |8     | xxxx, xxxxx                                     |
