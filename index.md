@@ -14,7 +14,7 @@
 |2     | Jack, Laurence, Harry, Jasmine                  |
 |3     | Amo, Vasi, Slim, Izzy                           |
 |4     | Chiara, Franscesco,Tony, Min                    |
-|5     | Will, Hillary, Sade, Kai                        |
+|5     | Will, Hillary, Sharday, Kai                     |
 |7     | Eli, Rishi                                      |
 |8     | xxxx, xxxxx                                     |
 
