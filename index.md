@@ -16,11 +16,12 @@
 |3     | Amo, Vasi, Slim, Izzy                           |
 |4     | Chiara, Franscesco, Tony, Min                   |
 |5     | Will, Hillary, Sharday, Kai                     |
-|7     | Eli, Rishi                                      |
+|7     | Eli, Rishi, Felix                               |
 |8     | xxxx, xxxxx                                     |
 
 # Slides
 [Week 1 Slides](Slides/Week1_CreateCanvas.html)  
-[Week 2 Slides](Slides/Week2_WhatIsCode.html)
+[Week 2 Slides](Slides/Week1_CreateCanvas.html)
+
 
 <a name="note1">1</a>: Subject to change depending on time constraints.
