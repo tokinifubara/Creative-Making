@@ -1,7 +1,7 @@
 # Creative Making: Design and Coding Visuals (Autumn 2019/20)
 Tutor: Irene Fubara-Manuel  
-Office Hours by appointment: Thursday, 11:30-12:30 in ROOM TBA  
-Tutor email: \*\*\*\*@ual.ac.uk  
+Office Hours by appointment: Thursday, 12:00-1:00  
+Tutor email: ifubaramanuel@arts.ac.uk  
 UAL CCI Slack: @IreneFubara  
 Session Times: Thursday 1.30-5.30 - Slot 2   
 Location: CCI 5th Floor Block B
