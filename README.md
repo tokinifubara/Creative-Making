@@ -1,7 +1,7 @@
 # Creative Making: Design and Coding Visuals (Autumn 2019/20)
 Tutor: Irene Fubara-Manuel  
-Office Hours by appointment: Thursday, 11:30-12:30 in ROOM TBA  
-Tutor email: \*\*\*\*@ual.ac.uk  
+Office Hours by appointment: Thursday, 12:00-1:00  
+Tutor email: ifubaramanuel@arts.ac.uk  
 UAL CCI Slack: @IreneFubara  
 Session Times: Thursday 1.30-5.30 - Slot 2   
 Location: CCI 5th Floor Block B
@@ -205,8 +205,8 @@ Chapter 3 - "The Principles of Animation" in *Disney Animation: The Illusion of 
 ---
 
 ### Week 5
-Research presentations  
-Workshop: Let’s Make Games  
+Research presentations   
+Workshop: Let’s Make Games    
 This session builds on everything we have learned so far in the course to create games. We will spend most our time workshopping our ideas, designing and creating our games.
 
 Please research online games and bring your favourite to share in class. We will have a play session before the workshop.
@@ -223,7 +223,7 @@ Research on your ideas for your final portfolio.
 ---
 
 ### Week 6
-Project Proposal Presentation
+Project Proposal Presentation  
 No research presentation this week. Instead we will have 5 minute student presentations of their project proposals. 
 
 --- 
