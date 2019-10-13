@@ -205,8 +205,8 @@ Chapter 3 - "The Principles of Animation" in *Disney Animation: The Illusion of 
 ---
 
 ### Week 5
-Research presentations  
-Workshop: Let’s Make Games  
+Research presentations   
+Workshop: Let’s Make Games    
 This session builds on everything we have learned so far in the course to create games. We will spend most our time workshopping our ideas, designing and creating our games.
 
 Please research online games and bring your favourite to share in class. We will have a play session before the workshop.
@@ -223,7 +223,7 @@ Research on your ideas for your final portfolio.
 ---
 
 ### Week 6
-Project Proposal Presentation
+Project Proposal Presentation  
 No research presentation this week. Instead we will have 5 minute student presentations of their project proposals. 
 
 --- 
