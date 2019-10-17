@@ -23,5 +23,8 @@
 [Week 1 Slides](Slides/Week1_CreateCanvas.html)  
 [Week 2 Slides](Slides/Week2_WhatIsCode.html)
 
+# Files
+[Week 3 and Week 4 index of sketches](Slides/Week4.html
+
 
 <a name="note1">1</a>: Subject to change depending on time constraints.
