@@ -22,7 +22,7 @@
 # Slides
 [Week 1: createCanvas() 👉🏿](Slides/Week1_CreateCanvas.html)  
 [Week 2: What is Code? 👉🏿](Slides/Week2_WhatIsCode.html)  
-[Week 3: What is Interactivity 👉🏿?](Slides/Week3_Interactivity.html)
+[Week 3: What is Interactivity? 👉🏿](Slides/Week3_Interactivity.html)
 
 # Files
 [Week 3 and Week 4 index of sketches 👉🏿](Slides/Week4.html)
