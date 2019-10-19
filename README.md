@@ -8,7 +8,7 @@ Location: CCI 5th Floor Block B
 
 ---
 
-[Course Webpage](https://tokinifubara.github.io/Creative-Making/)
+[Course Webpage](https://tokinifubara.github.io/Creative-Making/)  
 Please visit the course page weekly for slides and updates on presentation schedules.
 
 ---
