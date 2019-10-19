@@ -13,18 +13,21 @@
 |Week #|Presenters <sup>[1](#note1)<sup>                 |
 |:----:|:------------------------------------------------|
 |2     | Jack, Laurence, Harry, Jasmine                  |
-|3     | Amo, Vasi, Slim, Izzy                           |
-|4     | Chiara, Franscesco, Tony, Min                   |
+|3     | ~~Amo~~, Vasi, Slim, Izzy                       |
+|4     | Chiara, ~~Franscesco~~, Tony, Min               |
 |5     | Will, Hillary, Sharday, Chi                     |
-|7     | Eli, Rishi, Felix,                              |
-|8     | Joanna, Aaron                                   |
+|7     | Eli, Rishi, Felix, Amo                          |
+|8     | Joanna, Aaron, Fransceso                        |
 
 # Slides
-[Week 1 Slides](Slides/Week1_CreateCanvas.html)  
-[Week 2 Slides](Slides/Week2_WhatIsCode.html)
+[Week 1: createCanvas() 👉🏿](Slides/Week1_CreateCanvas.html)  
+[Week 2: What is Code? 👉🏿](Slides/Week2_WhatIsCode.html)  
+[Week 3: What is Interactivity 👉🏿?](Slides/Week3_Interactivity.html)
 
 # Files
-[Week 3 and Week 4 index of sketches](Slides/Week4.html)
+[Week 3 and Week 4 index of sketches 👉🏿](Slides/Week4.html)
 
+
+---
 
 <a name="note1">1</a>: Subject to change depending on time constraints.
