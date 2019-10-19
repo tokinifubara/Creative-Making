@@ -8,6 +8,11 @@ Location: CCI 5th Floor Block B
 
 ---
 
+[Course Webpage](https://tokinifubara.github.io/Creative-Making/)
+Please visit the course page weekly for slides and updates on presentation schedules.
+
+---
+
 ## Introduction
 How can we make art using code? In this module, we explore together techniques needed to draw and control pixels on screen. We will use libraries such as p5js, a popular library for creating graphics in a browser. Together, we will tour the basics of the JavaScript language including functions, data structures and conditional statements and objects to draw graphics and images screen. From there, we will look more advanced techniques such as image processing, video, sound, text manipulation, mathematical animation, and data visualisation using data from files and online sources like the public APIs.
 
