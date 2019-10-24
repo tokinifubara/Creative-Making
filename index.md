@@ -15,8 +15,8 @@
 |2     | Jack, Laurence, Harry, Jasmine                  |
 |3     | ~~Amo~~, Vasi, Slim, Izzy                       |
 |4     | Chiara, ~~Franscesco~~, Tony, Min               |
-|5     | ~~Will,~~ Hillary, Sharday, ~~Chi~~             |
-|7     | Eli, Rishi, Felix, Amo                          |
+|5     | ~~Will,~~ Hillary, ~~Sharday~~, ~~Chi~~         |
+|7     | Eli, Rishi, Felix, Amo, Sharday                 |
 |8     | Joanna, Aaron, Fransceso, Chi                   |
 
 # Slides
