@@ -117,7 +117,7 @@ SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
 **Core Text:**  
 Reas, C., McWilliams C., & LUST (2010). *Form+Code in Design Art and Architecture*.  New York: Princeton Architectural.    
 McCarthy, L, Fry, B. & Reas, C. (2015). *Make: Getting Started with p5.js*. San Francisco: Maker Media.    
-Shiffman, D. (2015). *Learning Processing: A Beginner's Guide to Programming Images, Animation and Interaction*. Massachusetts: Elsevier.   
+Shiffman, D. (2015). *Learning Processing: A Beginner's Guide to Programming Images, Animation and Interaction*. Massachusetts: Elsevier. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.  
 Manovich, L. (2010). *The Language of New Media*. London : MIT Press.  
 Paul, C. (2015). *Digital Art*. London: Thames and Hudson.  
 Shaw, A., 2017. Encoding and decoding affordances: Stuart Hall and interactive media technologies. *Media, Culture & Society, 39(4),* pp.592–602.  
@@ -244,10 +244,12 @@ Chapter 6 and 8- "Parameterize" and "Simulate" in *Form+Code*
 
 **Recommended Reading:**  
 Chapters 7, 8, 9 "Functions," "Objects," and "Arrays" in *Learning Processing* by Shiffman (2008).  
+Ebook available in library: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.   
+Please refer to Shiffman's p5.js versions of the code used in the book here: https://github.com/shiffman/LearningProcessing-p5.js.
 Chapter 4 - "Creative Priorities for Coding" in *The Fundamentals of Digital Art* by Colson (2007).
 
 **Assignment:**  
-Read - Chapter 10 "Algorithms" and "Mathematics" in *Learning Processing* by Shiffman (2008).  
+Read - Chapter 10 "Algorithms" and "Mathematics" in *Learning Processing* by Shiffman (2008). 
 
 + Using the principles taught in class create a particle system such as a raindrop.
 + Create one oscillation and a wave program using the mathematical principles taught in class
