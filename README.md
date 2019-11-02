@@ -62,6 +62,7 @@ Your final portfolio must consist of any three of the following:
 
 + A collection of original art works containing three p5.js sketches in the formats mentioned in the project brief.
 + 250-300 words synopsis describing and contextualising your portfolio. 
++ An annotated bibliography with 3 - 5 academic references.
 
 ---
 
@@ -76,7 +77,7 @@ Your final portfolio must consist of any three of the following:
 
 **Process Log:**
 
-+ You should log your development and production process in a blog hosted on Github Pages, WordPress, Wix, or Tumblr. Use the best method suited to your workflow.  
++ You should log your development and production process in a blog hosted on GitHub Pages, WordPress, Wix, or Tumblr. Use the best method suited to your workflow.  
 + It is important that you document your assignments, challenges you faced in making your code work and how you resolved them.  
 + Highlight when you are addressing subjects discussed in class, projects that inspire you, your experimentations and research through tags. These can be \#inspiration, \#research, \#challenges, or \#assignments.
 + This is your space to reflect and express yourself. It is your digital sketchbook. Decorate your blog however you choose, use an informal tone, scan your drawings, use memes --- so far as the content is intelligible, organised, and shows critical engagement with content of the module.
@@ -88,15 +89,22 @@ Your final portfolio must consist of any three of the following:
 + Highlight the tools, processes and motivations of the subject.
 + Expand on how or why this subject speaks to you.
 + Bring 2-3 questions from your research that we can discuss in the seminar.
-+ Submit your presentation as a PDF of your slides uploaded onto your GitHub repository.  
++ Submit your presentation as a PDF of your slides.   
 [Refer to this list of Women in New Media Art if you do not know where to start your search for artists](http://cmuems.com/2016/60212/resources/some-women-in-new-media/).  
 You can also choose an artist that fits the theme of the seminar.
 
 **Portfolio:**
 
 + Your final portfolio must have a cohesive design language/aesthetic, inspiration or theme that you have researched and critically reflected on.
-+ Your project files must be submitted as both a GitHub repository and Open Processing profile.
-+ Evidence of your critical engagement should be demonstrated in a 250-300 words synopsis that introduces your portfolio, explains your theme, and contextualizes your work. Place your synopsis in a "README" file on the front page of your GitHub repository.
++ Your project files must be submitted as an Open Processing profile.
++ Evidence of your critical engagement should be demonstrated in a 250-300 words "README" file that:
+  - introduces your portfolio;
+  - outlines the format of your sketches (ie. game, data visualization, pattern in nature... etc);
+  - explains your themes and motivations;
++ Evidence of appropriate research should be demonstrated in the 3-5 academic sources in your [annotated bibliography](https://library.leeds.ac.uk/info/1401/academic_skills/80/annotated_bibliographies).
+  - Each source must be summarized, explaining its connection to your theme.
+  - Summaries should be between 200-250 words for each reference.
+  - Your citations must use the Harvard author-date style. [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing)
 + Your portfolio submission must have a title. Place this as the first heading of your "README" file. 
 
 SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
@@ -115,13 +123,13 @@ SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
 
 ## Reading List
 **Core Text:**  
-Reas, C., McWilliams C., & LUST (2010). *Form+Code in Design Art and Architecture*.  New York: Princeton Architectural.    
-McCarthy, L, Fry, B. & Reas, C. (2015). *Make: Getting Started with p5.js*. San Francisco: Maker Media.    
-Shiffman, D. (2015). *Learning Processing: A Beginner's Guide to Programming Images, Animation and Interaction*. Massachusetts: Elsevier. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.  
-Manovich, L. (2010). *The Language of New Media*. London : MIT Press.  
-Paul, C. (2015). *Digital Art*. London: Thames and Hudson.  
-Shaw, A., 2017. Encoding and decoding affordances: Stuart Hall and interactive media technologies. *Media, Culture & Society, 39(4),* pp.592–602.  
-Shabbar, A. (2018). "Queer-Alt-Delete: Glitch Art as Protest Against the Surveillance Cis-tem." *WSQ: Women's Studies Quarterly,* 46(3), pp.195–211.  
+Reas, C., McWilliams C., & LUST (2010). *Form+code in design art and architecture*. New York: Princeton Architectural. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=235960.   
+McCarthy, L, Fry, B. & Reas, C. (2015). *Make: Getting started with p5.js*. San Francisco: Maker Media. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=713374.    
+Shiffman, D. (2015). *Learning processing: A beginner's guide to programming images, animation and interaction*. Massachusetts: Elsevier. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.  
+Manovich, L. (2010). *The language of new media*. London : MIT Press. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=116511.   
+Paul, C. (2015). *Digital art*. London: Thames and Hudson. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=279747.   
+Shaw, A., 2017. Encoding and decoding affordances: Stuart Hall and interactive media technologies. *Media, Culture & Society, 39(4),* pp.592–602.   
+Shabbar, A. (2018). "Queer-Alt-Delete: Glitch art as protest against the surveillance cis-tem." *WSQ: Women's Studies Quarterly,* 46(3), pp.195–211.  
 Harvey, A., & Michaël, S. (2006). *Real-time Art Manifesto*. Available at: http://www.tale-of-tales.com/tales/RAM.html.   
 
 **Recommended (Optional) Text:**  
