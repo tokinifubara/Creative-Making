@@ -237,7 +237,16 @@ Research on your ideas for your final portfolio.
 
 ### Week 6
 Project Proposal Presentation  
-No research presentation this week. Instead we will have 5 minute student presentations of their project proposals. 
+No research presentation this week. Instead we will have **5 minute student presentations** of their project proposals. 
+While your presentations are not graded it is important that you have images and examples that illustrate your ideas.
+
+**Possible Outline For presentation:**
+- Working title of portfolio/projects
+- Theme of portfolio and motivations for chosing the particular theme
+- Format of projects (eg. game, data visualization... etc)
+- Inspiration, examples, and (academic) sources
+- Methods to execute proposal
+- Experimentations so far
 
 --- 
 
@@ -272,8 +281,8 @@ Research Presentations
 **Assignment**:  
 Read:
 Chapter 12 - "Data" in *Make: Getting Started with p5.js*. 
-- Create a simple data visualisation using an API. 
-- Experiment with the style and data files from [*Form+Code*](http://formandcode.com/code-examples/visualize-data).
+- Create a simple data visualisation. 
+  Experiment with the style and data files from [*Form+Code*](http://formandcode.com/code-examples/visualize-data) and [Generative Design website](http://www.generative-gestaltung.de/2/sketches/?01_P/P_3_1_4_01).
 
 **Core Reading:**  
 Chapter 7 - "Visualize" in *Form+Code*  
@@ -289,6 +298,10 @@ Seminar: Video Screenings: A selection of talks, short films and documentaries
 Workshop: Exploring p5 Libraries, HTML and CSS
 
 Did you find a video on coding and design you really want to share? Did you make a video on coding and design you really want to share? Bring it to this session.
+
+**Assignment**:  
+
+Experiment with earlier works to see how you can expand on them to create your programs for your final portfolio. You will need to bring your experimentations to next week's class.
 
 ---
 
@@ -311,7 +324,7 @@ Individual tutorials with the instructor, addressing student's specific issues.
 [The Coding Train --- Daniel Shiffman's Youtube Videos on p5.js](https://www.youtube.com/user/shiffman/search?query=p5)  
 [p5.js port of all examples in Learning Processing](https://github.com/shiffman/LearningProcessing-p5.js)  
 [Allison Parrish's website with helpful p5.js tutorials](https://creative-coding.decontextualize.com)  
-[The Nature of Code ebook - Algorithms for patterns in nature](https://natureofcode.com/book/)
+[The Nature of Code ebook - Algorithms for patterns in nature](https://natureofcode.com/book/)  
 [P5js port for The Nature of Code](https://github.com/nature-of-code/noc-examples-p5.js)
 
 ### Examples
@@ -320,3 +333,4 @@ Individual tutorials with the instructor, addressing student's specific issues.
 
 ### Other Resources
 [A list of creative coding resources](https://github.com/terkelg/awesome-creative-coding/)  
+[A list of public apis](https://github.com/public-apis/public-apis)
