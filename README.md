@@ -306,9 +306,17 @@ Individual tutorials with the instructor, addressing student's specific issues.
 [p5.js reference](https://p5js.org/reference/)  
 [p5.js online editor --- Check the examples in the dropdown menu](https://editor.p5js.org)  
 [Open processing --- Examples of p5.js and online code editor](https://www.openprocessing.org)  
+
+### Tutorials
 [The Coding Train --- Daniel Shiffman's Youtube Videos on p5.js](https://www.youtube.com/user/shiffman/search?query=p5)  
 [p5.js port of all examples in Learning Processing](https://github.com/shiffman/LearningProcessing-p5.js)  
 [Allison Parrish's website with helpful p5.js tutorials](https://creative-coding.decontextualize.com)  
+[The Nature of Code ebook - Algorithms for patterns in nature](https://natureofcode.com/book/)
+[P5js port for The Nature of Code](https://github.com/nature-of-code/noc-examples-p5.js)
+
+### Examples
 [Examples from the book *Form+Code*](http://formandcode.com/code-examples/)  
-[A list of creative coding resources](https://github.com/terkelg/awesome-creative-coding/)  
 [Generative Design examples](http://www.generative-gestaltung.de/2/)
+
+### Other Resources
+[A list of creative coding resources](https://github.com/terkelg/awesome-creative-coding/)  
