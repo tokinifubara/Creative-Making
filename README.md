@@ -2,7 +2,7 @@
 Tutor: Irene Fubara-Manuel  
 Office Hours by appointment: Thursday, 12:00-1:00  
 Tutor email: i.fubaramanuel@arts.ac.uk  
-UAL CCI Slack: @IreneFubara  
+UAL CCI Slack: @Irene Fubara  
 Session Times: Thursday 1.30-5.30 - Slot 2   
 Location: CCI 5th Floor Block B
 
@@ -97,15 +97,25 @@ You can also choose an artist that fits the theme of the seminar.
 
 + Your final portfolio must have a cohesive design language/aesthetic, inspiration or theme that you have researched and critically reflected on.
 + Your project files must be submitted as an Open Processing profile.
++ Your portfolio submission must have a title. Place this as the first heading of your "README" file.
 + Evidence of your critical engagement should be demonstrated in a 250-300 words "README" file that:
   - introduces your portfolio;
   - outlines the format of your sketches (ie. game, data visualization, pattern in nature... etc);
   - explains your themes and motivations;
+  - Place the links to your Open Processing profile at the bottom of your README file.
 + Evidence of appropriate research should be demonstrated in the 3-5 academic sources in your [annotated bibliography](https://library.leeds.ac.uk/info/1401/academic_skills/80/annotated_bibliographies).
   - Each source must be summarized, explaining its connection to your theme.
+  - Use this structure if you are unsure how to approach the annotated bibliography:
+    + Introduce the source (article, book, essay): 
+      What is the text about?
+      What are the writer's main arguments or contributions.
+    + Explain how the source fits into your project: 
+      What did you take away from reading this article? 
+      Do you agree or disagree with some of the writer's arguments? 
+      Why do you agree/disagree? 
+      How did/will you incorporate the information into your project.
   - Summaries should be between 200-250 words for each reference.
-  - Your citations must use the Harvard author-date style. [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing)
-+ Your portfolio submission must have a title. Place this as the first heading of your "README" file. 
+  - Your citations must use the Harvard author-date style. [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing).
 
 SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
 
@@ -220,9 +230,9 @@ Chapter 3 - "The Principles of Animation" in *Disney Animation: The Illusion of 
 ### Week 5
 Research presentations   
 Workshop: Let’s Make Games    
-This session builds on everything we have learned so far in the course to create games. We will spend most our time workshopping our ideas, designing and creating our games.
+This session builds on everything we have learned so far in the course to create games. We will learn about creating functions, arrays and constructor functions. We will spend our time workshopping our ideas, designing and prototyping our games.
 
-Please research online games and bring your favourite to share in class. We will have a play session before the workshop.
+Please research online games and bring your favourite to share in class. We will have a 15-minute play session before the workshop.
 
 **Assignment**:  
 Research on your ideas for your final portfolio. 
@@ -253,7 +263,7 @@ While your presentations are not graded it is important that you have images and
 ### Week 7 
 Research Presentations  
 Seminar: Negotiating Creative Control: Generative and Algorithmic Art  
-Worskhop: Functions, Arrays, and Algorithms
+Worskhop: Algorithmic Procedures
 
 **Core Reading:**  
 Chapter 6 and 8- "Parameterize" and "Simulate" in *Form+Code*  
