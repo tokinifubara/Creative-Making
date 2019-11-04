@@ -299,10 +299,10 @@ Workshop: Exploring p5 Libraries, HTML and CSS
 
 Did you find a video on coding and design you really want to share? Did you make a video on coding and design you really want to share? Bring it to this session.
 
-**Assignment:**  
+**Assignment:**   
 Experiment with earlier works to see how you can expand on them to create your programs for your final portfolio. You will need to bring your experimentations to next week's class.
 
-**Independent Reading**
+**Independent Reading**  
 Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 
 ---
@@ -310,10 +310,10 @@ Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 ### Week 10: Group Crit - Open Tutorial Session
 Bring your project (at whatever stage you are in) to class so you can share it with the class and receive constructive feedback.
 
-**Independent Reading**  
+**Independent Reading**   
 Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 
-**Assignment:**  
+**Assignment:**   
 Begin developing your project.
 
 ---
@@ -321,7 +321,7 @@ Begin developing your project.
 ### Week 11: Project Development - Open Tutorial Session
 Individual tutorials with the instructor, addressing student's specific issues.
 
-**Independent Reading**  
+**Independent Reading**   
 Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 
 ---
