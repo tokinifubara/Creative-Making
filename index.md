@@ -25,6 +25,7 @@
 [Week 3: What is Interactivity? 👉🏿](Slides/Week3_Interactivity.html)  
 [Week 3 and Week 4 index of sketches 👉🏿](Slides/Week4.html)  
 [Week 5: Let's make games 👉🏿](Slides/Week5_LetsMakeGames.html)  
+[Week 7: Algorithmic Thinking 👉🏿](Slides/Week7_AlgorithmicThinking.html)  
 
 
 ---
