@@ -282,7 +282,7 @@ Chapter 4 - "Creative Priorities for Coding" in *The Fundamentals of Digital Art
 **Assignment:**  
 Read - Chapter 3 "Oscillation" and 8 "Fractals" in *The Nature of Code* by Shiffman (2008). [p5js port](https://github.com/shiffman/LearningProcessing-p5.js)
 
-+ Using the mathematical principles (sin and cos) taught in class, create patterns.
++ Using the mathematical principles (sin and cos) taught in class, create patterns.  
 + Create a terrain using perlin noise.
 
 ---
