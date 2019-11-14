@@ -134,7 +134,8 @@ SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
 ## Reading List
 **Core Text:**  
 Reas, C., McWilliams C., & LUST (2010). *Form+code in design art and architecture*. New York: Princeton Architectural. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=235960.   
-McCarthy, L, Fry, B. & Reas, C. (2015). *Make: Getting started with p5.js*. San Francisco: Maker Media. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=713374.    
+McCarthy, L, Fry, B. & Reas, C. (2015). *Make: Getting started with p5.js*. San Francisco: Maker Media. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=713374.   
+Shiffman, D., In Fry, S., & Marsh, Z. (2012). The nature of code.  
 Shiffman, D. (2015). *Learning processing: A beginner's guide to programming images, animation and interaction*. Massachusetts: Elsevier. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.  
 Manovich, L. (2010). *The language of new media*. London : MIT Press. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=116511.   
 Paul, C. (2015). *Digital art*. London: Thames and Hudson. Available at: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=279747.   
@@ -243,6 +244,11 @@ Research on your ideas for your final portfolio.
 **Core Reading:**
 "Real-time Art Manifesto" by Harvey and Michaël (2006).
 
+**Recommended Reading:**. 
+Chapters 7, 8, 9 "Functions," "Objects," and "Arrays" in *Learning Processing* by Shiffman (2008).  
+Ebook available in library: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.   
+Please refer to Shiffman's p5.js versions of the code used in the book here: https://github.com/shiffman/LearningProcessing-p5.js.
+
 ---
 
 ### Week 6
@@ -262,24 +268,22 @@ While your presentations are not graded it is important that you have images and
 
 ### Week 7 
 Research Presentations  
-Seminar: Negotiating Creative Control: Generative and Algorithmic Art  
-Worskhop: Algorithmic Procedures
+Seminar: Algorithmic Thinking  
+Worskhop: Algorithmic Art in p5js
 
 **Core Reading:**  
 Chapter 6 and 8- "Parameterize" and "Simulate" in *Form+Code*  
 "Queer-Alt-Delete: Glitch Art as Protest Against the Surveillance Cis-tem" by Shabbar (2018)
 
 **Recommended Reading:**  
-Chapters 7, 8, 9 "Functions," "Objects," and "Arrays" in *Learning Processing* by Shiffman (2008).  
-Ebook available in library: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=1319451.   
-Please refer to Shiffman's p5.js versions of the code used in the book here: https://github.com/shiffman/LearningProcessing-p5.js.
+Chapter 8 - "Cellular Automata" in *The Nature of Code* by Shiffman (2012).
 Chapter 4 - "Creative Priorities for Coding" in *The Fundamentals of Digital Art* by Colson (2007).
 
 **Assignment:**  
-Read - Chapter 10 "Algorithms" and "Mathematics" in *Learning Processing* by Shiffman (2008). 
+Read - Chapter 3 "Oscillation" and 8 "Fractals" in *The Nature of Code* by Shiffman (2008). [p5js port](https://github.com/shiffman/LearningProcessing-p5.js)
 
-+ Using the principles taught in class create a particle system such as a raindrop.
-+ Create one oscillation and a wave program using the mathematical principles taught in class
++ Using the mathematical principles (sin and cos) taught in class, create patterns.  
++ Create a terrain using perlin noise.
 
 ---
 

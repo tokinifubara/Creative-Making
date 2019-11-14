@@ -16,8 +16,8 @@
 |3     | Vasi, Slim, Izzy                                |
 |4     | Chiara, Tony, Min                               |
 |5     | Hillary                                         |
-|7     | Eli, Rishi, Felix, Amo, Sharday                 |
-|8     | Joanna, Aaron, Fransceso, Chi, Lucie            |
+|7     | Rishi, Felix, Amo, Sharday                      |
+|8     | Joanna, Aaron, Lucie, Fransceso, Chi, Eli       |
 
 # Slides
 [Week 1: createCanvas() 👉🏿](Slides/Week1_CreateCanvas.html)  
