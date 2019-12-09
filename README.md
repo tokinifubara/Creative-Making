@@ -130,9 +130,9 @@ In class presentation: 30/01/2020
 3. Annotated bibliography:  DOCX file submission via Moodle.
 4. 250-300 word synopsis: DOCX file submission via Moodle.
 5. Three P5js sketches: A DOCX file with links to p5 Editor sketches or Open Processing profile. Place a comment block on the top of your code to highlight if is a game,  video playback, animation, patterns found in nature, or data visualisation.  
-The links to your process blog and p5js sketches may be placed at the bottom of the 200-300 word synopsis DOCX file introducing your portfolio.
+The links to your process blog and p5js sketches should be placed at the bottom of the 200-300 word synopsis DOCX file introducing your portfolio.
 
-**If you are not submitting using the p5js editor,** ensure that you upload your project onto GitHub and submit the link and the hash like so:  
+**If you are not submitting using the p5js editor,** ensure that you upload your project onto GitHub and submit the link and the hash at the bottom of your synopsis:
 
 GitHub link: https://github.com/tokinifubara/Creative-Making  
 hash: d47fec88b3b657504c7155f7cf694ad217696154  
