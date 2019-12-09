@@ -117,9 +117,33 @@ You can also choose an artist that fits the theme of the seminar.
   - Summaries should be between 200-250 words for each reference.
   - Your citations must use the Harvard author-date style. [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing).
 
-SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
+## SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
 
----
+Portfolio hand-In date & time: Thursday 30/01/2020 by 4pm  
+In class presentation: 30/01/2020
+
+### Hand-in checklist:
+
+1. In-class presentation: PDF submission via Moodle.  
+   You can also submit your supporting speaker notes as a PDF or DOCX file.
+2. Process log: PDF export of blog AND link to blog in DOCX file submission via Moodle.
+3. Annotated bibliography:  DOCX file submission via Moodle.
+4. 250-300 word synopsis: DOCX file submission via Moodle.
+5. Three P5js sketches: A DOCX file with links to p5 Editor sketches or Open Processing profile. Place a comment block on the top of your code to highlight if is a game,  video playback, animation, patterns found in nature, or data visualisation.  
+The links to your process blog and p5js sketches may be placed at the bottom of the 200-300 word synopsis DOCX file introducing your portfolio.
+
+**If you are not submitting using the p5js editor,** ensure that you upload your project onto GitHub and submit the link and the hash like so:  
+
+GitHub link: https://github.com/tokinifubara/Creative-Making  
+hash: d47fec88b3b657504c7155f7cf694ad217696154  
+  
+[Click this link to see an image of where to find the hash for your upload.](https://raw.githubusercontent.com/tokinifubara/Creative-Making/master/Slides/assetW2/CommitHash.png)
+
+For more on submissions formats see the templates provided in the "SubmissionMaterials" file in the "Course Materials" file on Moodle.
+
+Ensure all links are correct and active before submission.  
+If you have any difficulties in submitting work contact: cci@arts.ac.uk in advance of the hand in date.
+
 
 ## Module Organization
 
