@@ -115,7 +115,8 @@ You can also choose an artist that fits the theme of the seminar.
       Why do you agree/disagree? 
       How did/will you incorporate the information into your project.
   - Summaries should be between 200-250 words for each reference.
-  - Your citations must use the Harvard author-date style. [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing).
+  - Your citations must use the Harvard author-date style.  
+  [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing)
 
 ## SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
 
@@ -313,8 +314,8 @@ Read - Chapter 3 "Oscillation" and 8 "Fractals" in *The Nature of Code* by Shiff
 
 ### Week 8 
 Research Presentations  
-**Seminar:** The Politics of Data  
-**Workshop:** Working with Data: On APIs and Data Visualization
+Seminar: The Politics of Data  
+Workshop: Working with Data: On APIs and Data Visualization
 
 **Assignment**:  
 Read:
@@ -368,12 +369,17 @@ Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 Workshop:  
 We review what we have learned in the course so far and expand that knowledge.
 
+**Independent Reading**   
+Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 
 ---
 
 ### Week 13: Design Crash Course
 Workshop:  
 We practice some design principles and apply them to our projects.
+
+**Independent Reading**   
+Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 
 ---
 
