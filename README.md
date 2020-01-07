@@ -364,12 +364,27 @@ Research your ideas in the [University Library](https://libsearch.arts.ac.uk)
 
 ---
 
-## Resources 
+### Week 12: Extended Review
+Workshop:  
+We review what we have learned in the course so far and expand that knowledge.
+
+
+---
+
+### Week 13: Design Crash Course
+Workshop:  
+We practice some design principles and apply them to our projects.
+
+---
+
+## Key Resources 
+[Mozilla Developer Network | **The** JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 [p5.js reference](https://p5js.org/reference/)  
 [p5.js online editor --- Check the examples in the dropdown menu](https://editor.p5js.org)  
 [Open processing --- Examples of p5.js and online code editor](https://www.openprocessing.org)  
 
 ### Tutorials
+[Interactive JavaScript Tutorial - Basics to Advanced](https://javascript.info)
 [The Coding Train --- Daniel Shiffman's Youtube Videos on p5.js](https://www.youtube.com/user/shiffman/search?query=p5)  
 [p5.js port of all examples in Learning Processing](https://github.com/shiffman/LearningProcessing-p5.js)  
 [Allison Parrish's website with helpful p5.js tutorials](https://creative-coding.decontextualize.com)  
