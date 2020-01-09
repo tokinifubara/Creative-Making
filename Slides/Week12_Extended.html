@@ -1,0 +1,590 @@
+<!DOCTYPE html><html><head>
+      <title>Extended</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]},"HTML-CSS":{"availableFonts":["TeX"]}});
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+        
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview a {
+  color: hotpink;
+  text-decoration: none;
+  border-bottom: 2px solid cornflowerblue;
+  text-align: center;
+}
+.markdown-preview.markdown-preview .slides * {
+  font-family: Avenir, sans-serif;
+  text-align: left;
+}
+.markdown-preview.markdown-preview .slides p {
+  font-size: 1em;
+}
+.markdown-preview.markdown-preview .slides h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin-bottom: -10px;
+  line-height: 1em;
+}
+.markdown-preview.markdown-preview .slides h2,
+.markdown-preview.markdown-preview .slides h3 {
+  font-weight: 500;
+  font-size: 1.25em;
+  margin-bottom: -5px;
+}
+.markdown-preview.markdown-preview .slides h4,
+.markdown-preview.markdown-preview .slides h5,
+.markdown-preview.markdown-preview .slides h6 {
+  font-weight: 300;
+  font-size: 1.25em;
+  font-style: italic;
+}
+.markdown-preview.markdown-preview .slides img {
+  border: none;
+  padding: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.markdown-preview.markdown-preview .slides li {
+  font-size: 1em;
+}
+.markdown-preview.markdown-preview .slides table,
+.markdown-preview.markdown-preview .slides th,
+.markdown-preview.markdown-preview .slides td {
+  vertical-align: top;
+  text-align: left;
+}
+.markdown-preview.markdown-preview .slides figcaption {
+  text-align: center;
+}
+.markdown-preview.markdown-preview .slides section:nth-child(1) img {
+  justify-content: left;
+  width: 75%;
+}
+.markdown-preview.markdown-preview .slides pre {
+  font-size: 0.75em;
+}
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 id="extended-review">Extended Review</h1>
+<h2 id="data-types-in-javascript">Data Types in JavaScript</h2>
+<ol type="1">
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">Primitives in JS</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Objects</a></li>
+</ol>
+<hr>
+<h3 id="primitive-data-types">7 Primitive Data Types</h3>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/string">string &#x1F449;&#x1F3FF;</a><br>
+In any computer programming language, a string is a <strong>sequence of characters</strong> used to represent text.</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> str1 <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span> <span class="token comment">// Double quotes</span>
+<span class="token keyword">let</span> str2 <span class="token operator">=</span> <span class="token string">&apos;Salut&apos;</span><span class="token punctuation">;</span> <span class="token comment">// Single quotes</span>
+<span class="token keyword">let</span> str3 <span class="token operator">=</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>str1<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">! </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>str2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!, Ca va?`</span></span> <span class="token comment">// template literals* with backtick quotes</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str3<span class="token punctuation">)</span><span class="token punctuation">;</span></pre>
+<p>*<strong>Template literals</strong>:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">Template literals</a> are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Strings reference &#x1F449;&#x1F3FF;</a></p>
+<p><strong>String Methods we have encountered</strong>:</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&quot;SE5 8UF UK&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// returns &apos;se5 8uf uk&apos; </span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&apos; &apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// returns [&apos;SE5&apos;, &apos;8UF&apos;, &apos;UK&apos;]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/[0-9]/g</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// regex to find all digits.. returns [&apos;5&apos;, &apos;8&apos;]</span></pre></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/boolean">boolean &#x1F449;&#x1F3FF;</a><br>
+A Boolean is a logical data type that can have only the values true or false</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>boolean conditional<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token comment">// execute code block</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span></pre>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token comment">// Boolean in conditional (ternary) operator</span>
+<span class="token keyword">let</span> isTrue <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> isTrue <span class="token operator">?</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;A&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;B&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre>
+<p><strong>Boolean values</strong><br>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy"><strong>Falsy Values &#x1F449;&#x1F3FF;</strong></a><br>
+A falsy value is a value that is considered false when encountered in a Boolean context</p>
+<p><strong>7 falsy values in JavaScript:</strong></p>
+<ol type="1">
+<li>The keyword <code>false</code> The keyword false</li>
+<li>The number <code>zero</code></li>
+<li>The BigInt <code>0n</code> BigInt, when used as a boolean, follows the same rule as a Number. 0n is falsy.</li>
+<li>The empty string <code>&quot;&quot;, &apos;&apos;, ``</code> (it has a length of zero)</li>
+<li>null<br>
+</li>
+<li>undefined<br>
+</li>
+<li>NaN</li>
+</ol>
+<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy"><strong>Truthy &#x1F449;&#x1F3FF;</strong></a> A truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy as above.</p>
+<p><br>
+</p></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/number">number &#x1F449;&#x1F3FF;</a><br>
+Number is a numeric data type in the double-precision 64-bit <strong>floating point format</strong> (IEEE 754). In other programming languages different numeric types can exist, for examples: Integers, Floats, Doubles, or Bignums.<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number reference &#x1F449;&#x1F3FF;</a></p></li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/bigint">bigint &#x1F449;&#x1F3FF;</a><br>
+BigInt is a numeric data type that can represent integers in the arbitrary precision format. In other programming languages different numeric types can exist, for examples: Integers, Floats, Doubles, or Bignums.</p>
+<p>A BigInt is created by appending n to the end of an integer literal &#x2014; 10n &#x2014; or by calling the function BigInt().</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">10n</span><span class="token punctuation">;</span>
+<span class="token keyword">typeof</span> x<span class="token punctuation">;</span> <span class="token comment">// &apos;bigint&apos;</span></pre>
+<p><br>
+</p></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/null">null &#x1F449;&#x1F3FF;</a><br>
+A null value represents a reference that points, generally intentionally, to a <strong>nonexistent or invalid object or address</strong></p></li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/undefined">undefined &#x1F449;&#x1F3FF;</a><br>
+Undefined is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Glossary/symbol">symbol &#x1F449;&#x1F3FF;</a><br>
+A symbol value is created by invoking the function Symbol, which dynamically produces an anonymous, <strong>unique value</strong>. A symbol may be used as an <strong>object property.</strong></p>
+<p><strong>Symbols unique id</strong></p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> id1 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">&quot;id&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> id2 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">&quot;id&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>id1 <span class="token operator">===</span> id2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// returns false even though the two ids   have the same description</span></pre></li>
+</ul>
+<hr>
+<h2 id="objects">Objects</h2>
+<p>An object is a collection of related data and/or functionality (which usually consists of several variables and functions &#x2014; which are called properties and methods when they are inside objects.)</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer">Object Literals &#x1F449;&#x1F3FF;</a><br>
+Objects can be initialized using new Object(), Object.create(), or using the literal notation (initializer notation). An object initializer is a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">Object Basics &#x1F449;&#x1F3FF;</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Object-Oriented JS for Beginners &#x1F449;&#x1F3FF;</a></li>
+</ul>
+<p><br>
+</p>
+<p><strong>Class: A Key Part of OOP JS</strong> A class is a template for the creation of objects. <a href="https://p5js.org/reference/#/p5/class">from p5.js reference</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor">Constructors &#x1F449;&#x1F3FF;</a> are a special method for creating and initializing an object created within a class.<br>
+<a href="https://editor.p5js.org/tokinifubara/sketches/DEnkgfrYE">Game Sketch using functions to construct objects</a><br>
+<a href="https://editor.p5js.org/tokinifubara/sketches/T9lA4O8Sz">Game Sketch using class to construct objects</a></p>
+<p><br>
+</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Functions &#x1F449;&#x1F3FF;</a><br>
+The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, but suffers from security and [&#x2026;] performance issues.<br>
+Every JavaScript function is actually a Function object.</p>
+<p>Aside from function object, we are used to function statements/declarations</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">function</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Place code here</span>
+<span class="token punctuation">}</span></pre>
+<p>In JS functions can also be expressions</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> <span class="token function-variable function">myFun</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Hello&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">myFun</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre>
+<p>Function expressions can also be created using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a></p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> <span class="token function-variable function">myFun</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Hello&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">myFun</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Arrays &#x1F449;&#x1F3FF;</a><br>
+Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed.</p>
+<p><strong>Some array methods we have encountered</strong></p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&apos;The&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;quick&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;brown&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;fox&apos;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>           <span class="token comment">// [&apos;The&apos;, &apos;quick&apos;, &apos;brown&apos;, &apos;fox&apos;] </span>
+arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&quot;jumped&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>           <span class="token comment">// [&apos;The&apos;, &apos;quick&apos;, &apos;brown&apos;, &apos;fox&apos;, &apos;jumped&apos;]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// [&apos;The&apos;, &apos;brown&apos;, &apos;fox&apos;, &apos;jumped&apos;, &apos;quick&apos;]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &apos;The brown fox jumped quick&apos;</span></pre>
+<p><strong>Some other array methods:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">.filter() &#x1F449;&#x1F3FF;</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">.map() &#x1F449;&#x1F3FF;</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">.reduce() &#x1F449;&#x1F3FF;</a></li>
+</ul>
+<p><strong>Revisiting the Airport Data Visualization from Weeks 9 and 10</strong></p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span>
+<span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Algeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Angola&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Benin&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Botswana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Botswana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Botswana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Burkina Faso&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Burundi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cameroon&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cameroon&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cape Verde&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cape Verde&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cape Verde&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cape Verde&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cape Verde&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cape Verde&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Central African Republic&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Chad&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Comoros&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Comoros&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Comoros&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Cote d&apos;Ivoire&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Democratic Republic of Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Democratic Republic of Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Democratic Republic of Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Democratic Republic of Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Democratic Republic of Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Democratic Republic of Congo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Djibouti&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Egypt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Equitorial Guinea&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Equitorial Guinea&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Eritrea&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ethiopia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Gabon&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Gabon&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Gambia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ghana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ghana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ghana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ghana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Ghana&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Guinea&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Guinea-Bissau&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Kenya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Lesotho&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Liberia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Libya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Libya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Libya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Libya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Libya&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Madagascar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Malawi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Malawi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mali&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mauritania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mauritania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mauritius&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mauritius&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Morocco&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Mozambique&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Namibia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Namibia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Namibia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Namibia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Niger&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Nigeria&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Rwanda&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sao Tome and Principe&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sao Tome and Principe&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Senegal&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Senegal&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Seychelles&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Seychelles&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sierra Leone&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Somalia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Somalia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Somalia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Somalia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Somalia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Africa&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;South Sudan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sudan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sudan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sudan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Sudan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Swaziland&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tanzania&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Togo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tunisia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tunisia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tunisia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tunisia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tunisia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tunisia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Uganda&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Uganda&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Western Sahara&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Western Sahara&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zambia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zambia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zambia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zambia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zambia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zimbabwe&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zimbabwe&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Zimbabwe&quot;</span>
+<span class="token punctuation">]</span>
+
+<span class="token comment">// Using reduce function to get occurrences</span>
+<span class="token keyword">const</span> <span class="token function-variable function">reduction</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> curr</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>         <span class="token comment">// acummulator or prevVal, currentValue</span>
+  <span class="token comment">// if value is new, then count = 1, else (value is repeated) add 1 to count</span>
+  <span class="token operator">!</span>acc<span class="token punctuation">[</span>curr<span class="token punctuation">]</span> <span class="token operator">?</span> acc<span class="token punctuation">[</span>curr<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">:</span> acc<span class="token punctuation">[</span>curr<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span> 
+  <span class="token keyword">return</span> acc<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Send results of reduction to object {}</span>
+<span class="token keyword">const</span> newarr <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span>reduction<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Accessing object properties with []</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newarr<span class="token punctuation">[</span><span class="token string">&apos;Algeria&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Accessing object properties with dot syntax</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newarr<span class="token punctuation">.</span>Algeria<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Using for...of loop*</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> key <span class="token keyword">of</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>newarr<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> has </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newarr<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> airports`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// for...in loops*</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> val <span class="token keyword">in</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>newarr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Return index numbers from 0 - 54</span>
+<span class="token punctuation">}</span>
+</pre>
+<p>*<strong>For&#x2026;of and *For&#x2026;in loops</strong>:<br>
+<em>Numbers</em><br>
+The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for&#x2026;in &#x1F449;&#x1F3FF;</a> statement iterates over all enumerable properties of an object that are keyed by strings (ignoring ones keyed by Symbols), including inherited enumerable properties.</p>
+<p><em>Values</em><br>
+The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of">for&#x2026;of</a> statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.</p></li>
+</ul>
+<hr>
+<h2 id="javascript-and-the-dom">JavaScript and the DOM</h2>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Document Object Model (DOM)</a> is the data representation of the objects that comprise the structure and content of a document on the web.<br>
+The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them you can change the document&#x2019;s structure, style, or content.</p>
+<figure>
+<img src="https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/807/fff3ae6e96800f4dfa85a9456726d925/Using_the_W3C_DOM_Level_1_Core-doctree.jpg" alt><figcaption>DOM Tree</figcaption>
+</figure>
+<pre class="text language-text language-html" data-role="codeBlock" data-info="html"><span class="token doctype">&lt;!DOCTYPE HTML&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span> // We would place the &apos;settings&apos; for the computer to read here
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Test 1 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Saying Hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>myid<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+    <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&quot;Hello &quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;myid&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    elem<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">repeat</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     
+    elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>fontFamily <span class="token operator">=</span> <span class="token string">&quot;Helvetica&quot;</span><span class="token punctuation">;</span> <span class="token comment">// Modifying style</span>
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></pre>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#DOM_interfaces">Common Document methods</a></p>
+<p><a href="https://editor.p5js.org/tokinifubara/sketches/DzyODkbOO">p5 Sketch with basic DOM manipulation</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples">Examples of DOM Manipulation in vanilla JS</a></p>
+<h2 id="supervised-reading">Supervised Reading</h2>
+<p>Using the MDN and p5.js references, create some simple:</p>
+<p><strong>10 mins:</strong><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while">while &#x1F449;&#x1F3FF;</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while">do while &#x1F449;&#x1F3FF;</a> loops,<br>
+<strong>10 mins:</strong><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">switch statements &#x1F449;&#x1F3FF;,</a></p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript"><span class="token comment">// p5.sketch to move circle up and down with switch statement</span>
+
+<span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">createCanvas</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">ellipseMode</span><span class="token punctuation">(</span><span class="token constant">CENTER</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">background</span><span class="token punctuation">(</span><span class="token number">220</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">if</span><span class="token punctuation">(</span>y <span class="token operator">&gt;=</span> height<span class="token punctuation">)</span> y <span class="token operator">=</span> height<span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>y <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>  y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  
+  <span class="token function">ellipse</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> y<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>keyIsPressed<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span><span class="token punctuation">(</span>keyCode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">case</span> <span class="token constant">UP_ARROW</span><span class="token punctuation">:</span>
+        y <span class="token operator">-=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> <span class="token constant">DOWN_ARROW</span><span class="token punctuation">:</span>
+        y <span class="token operator">+=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span>
+        y <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></pre>
+<p><strong>45 mins:</strong></p>
+<p>Read Chapter 10 from <em>Getting Started with Processing by Lauren McCarthy</em> and complete the exercise</p>
+<p>If there is still time left: Read Chapter 13 section &#x2018;p5.dom&#x2019;<em>Getting Started with Processing by Lauren McCarthy</em> and:<br>
+- create a simple sketch manipulating the DOM with p5js. - create another file manipulating the DOM using some of the common vanilla JS DOM APIS. For example:</p>
+<pre class="text language-text language-javascript" data-role="codeBlock" data-info="javascript">document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+parentNode<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+element<span class="token punctuation">.</span>innerHTML
+element<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left
+element<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+element<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+window<span class="token punctuation">.</span>content
+window<span class="token punctuation">.</span>onload
+window<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
