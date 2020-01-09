@@ -27,7 +27,7 @@
 [Week 5: Let's make games 👉🏿](Slides/Week5_LetsMakeGames.html)  
 [Week 7: Algorithmic Thinking 👉🏿](Slides/Week7_AlgorithmicThinking.html)  
 [Week 8: The Politics of Data 👉🏿](Slides/Week8_PoliticsOfData.html)  
-[Week 12: Extended Review](Slides/Week12_Extended.html)
+[Week 12: Extended Review 👉🏿](Slides/Week12_Extended.html)
 
 
 ---
