@@ -151,6 +151,8 @@ You can also choose an artist that fits the theme of the seminar.
   - Your citations must use the Harvard author-date style.  
   [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing)
 
+---
+
 ## SUBMISSION/HAND-IN DETAILS AND DEADLINES
 
 Portfolio hand-In date & time: Thursday 30/01/2020 by 4pm  
@@ -182,6 +184,7 @@ For more on submissions formats see the [templates provided in here](https://git
 Ensure all links are correct and active before submission.  
 If you have any difficulties in submitting work contact: cci@arts.ac.uk in advance of the hand in date.
 
+---
 
 ## Module Organization
 
