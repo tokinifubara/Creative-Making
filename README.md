@@ -159,7 +159,7 @@ In class presentation: 30/01/2020
 ### Hand-in checklist:
 
 **SUBMIT *ONE* PDF FILE TO MOODLE COMBINING THE FOLLOWING:**  
-[See how to combine Microsoft Word and PDF files in Adobe Acrobat Pro here](HOWTOCOMBINEPDFS.pdf)  
+[IMPORTANT: Follow this guide to combine your Microsoft Word and PDF files in Adobe Acrobat Pro](HOWTOCOMBINEPDFS.pdf)  
 Adobe Acrobat Pro DC is available on the computers in the CCI Lab.
 
 1. In-class presentation.  
