@@ -13,6 +13,39 @@ Please visit the course page weekly for slides and updates on presentation sched
 
 ---
 
+## Table of Contents
+- [Creative Making: Design and Coding Visuals (Autumn 2019/20)](#creative-making-design-and-coding-visuals-autumn-201920)
+  * [Introduction](#introduction)
+  * [Table of Contents](#table-of-contents)
+  * [Learning Outcomes](#learning-outcomes)
+  * [Creative Project Brief](#creative-project-brief)
+  * [Assessment Type](#assessment-type)
+    + [Guidelines:](#guidelines)
+  * [SUBMISSION/HAND-IN DETAILS AND DEADLINES](#submissionhand-in-details-and-deadlines)
+    + [Hand-in checklist](#hand-in-checklist)
+  * [Module Organization](#module-organization)
+  * [Reading List](#reading-list)
+  * [Weekly Schedule](#weekly-schedule)
+    + [Week 1](#week-1)
+    + [Week 2](#week-2)
+    + [Week 3](#week-3)
+    + [Week 4](#week-4)
+    + [Week 5](#week-5)
+    + [Week 6](#week-6)
+    + [Week 7](#week-7)
+    + [Week 8](#week-8)
+    + [Week 9](#week-9)
+    + [Week 10: Group Crit - Open Tutorial Session](#week-10-group-crit-open-tutorial-session)
+    + [Week 11: Project Development - Open Tutorial Session](#week-11-project-development-open-tutorial-session)
+    + [Week 12: Extended Review](#week-12-extended-review)
+    + [Week 13: Design Crash Course](#week-13-design-crash-course)
+  * [Key Resources](#key-resources)
+    + [Tutorials](#tutorials)
+    + [Examples](#examples)
+    + [Other Resources](#other-resources)
+
+---
+
 ## Introduction
 How can we make art using code? In this module, we explore together techniques needed to draw and control pixels on screen. We will use libraries such as p5js, a popular library for creating graphics in a browser. Together, we will tour the basics of the JavaScript language including functions, data structures and conditional statements and objects to draw graphics and images screen. From there, we will look more advanced techniques such as image processing, video, sound, text manipulation, mathematical animation, and data visualisation using data from files and online sources like the public APIs.
 
@@ -118,20 +151,24 @@ You can also choose an artist that fits the theme of the seminar.
   - Your citations must use the Harvard author-date style.  
   [See the library guide for more on academic referencing.](https://arts.ac.libguides.com/referencing)
 
-## SUBMISSION/HAND-IN DETAILS AND DEADLINES: TBA
+## SUBMISSION/HAND-IN DETAILS AND DEADLINES
 
 Portfolio hand-In date & time: Thursday 30/01/2020 by 4pm  
 In class presentation: 30/01/2020
 
 ### Hand-in checklist:
 
-1. In-class presentation: PDF submission via Moodle.  
-   You can also submit your supporting speaker notes as a PDF or DOCX file.
-2. Process log: PDF export of blog AND link to blog in DOCX file submission via Moodle.
-3. Annotated bibliography:  DOCX file submission via Moodle.
-4. 250-300 word synopsis: DOCX file submission via Moodle.
-5. Three P5js sketches: A DOCX file with links to p5 Editor sketches or Open Processing profile. Place a comment block on the top of your code to highlight if is a game,  video playback, animation, patterns found in nature, or data visualisation.  
-The links to your process blog and p5js sketches should be placed at the bottom of the 200-300 word synopsis DOCX file introducing your portfolio.
+**SUBMIT *ONE* PDF FILE TO MOODLE COMBINING THE FOLLOWING:**  
+[See how to combine Microsoft Word and PDF files in Adobe Acrobat Pro here](HOWTOCOMBINEPDFS.pdf)  
+Adobe Acrobat Pro DC is available on the computers in the CCI Lab.
+
+1. In-class presentation.  
+   You can also submit your supporting speaker notes.
+2. Process log: Export of your blog AND link to blog.
+3. Annotated bibliography.
+4. 250-300 word synopsis.
+5. Three P5js sketches: With links to p5 Editor sketches or Open Processing profile. Place a comment block on the top of your code to highlight if is a game,  video playback, animation, patterns found in nature, or data visualisation.  
+The links to your process blog and p5js sketches should be placed at the bottom of the 200-300 word synopsis introducing your portfolio.
 
 **If you are not submitting using the p5js editor,** ensure that you upload your project onto GitHub and submit the link and the hash at the bottom of your synopsis:
 
