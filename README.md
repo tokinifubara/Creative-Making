@@ -159,7 +159,7 @@ In class presentation: 30/01/2020
 ### Hand-in checklist:
 
 **SUBMIT *ONE* PDF FILE TO MOODLE COMBINING THE FOLLOWING:**  
-[IMPORTANT: Follow this guide to combine your Microsoft Word and PDF files in Adobe Acrobat Pro](HOWTOCOMBINEPDFS.pdf)  
+[IMPORTANT: Follow this guide to combine your Microsoft Word and PDF files in Adobe Acrobat Pro](https://github.com/tokinifubara/Creative-Making/blob/master/HOWTOCOMBINEPDFS.pdf)  
 Adobe Acrobat Pro DC is available on the computers in the CCI Lab.
 
 1. In-class presentation.  
@@ -177,7 +177,7 @@ hash: d47fec88b3b657504c7155f7cf694ad217696154
   
 [Click this link to see an image of where to find the hash for your upload.](https://raw.githubusercontent.com/tokinifubara/Creative-Making/master/Slides/assetW2/CommitHash.png)
 
-For more on submissions formats see the templates provided in the "SubmissionMaterials" file in the "Course Materials" file on Moodle.
+For more on submissions formats see the [templates provided in here](https://github.com/tokinifubara/Creative-Making/blob/master/12345678_CreativeMaking.pdf) or the "SubmissionMaterials" file in the "Course Materials" file on Moodle.
 
 Ensure all links are correct and active before submission.  
 If you have any difficulties in submitting work contact: cci@arts.ac.uk in advance of the hand in date.
